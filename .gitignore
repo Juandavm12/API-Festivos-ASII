@@ -1,0 +1,19 @@
+# Editor settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Operating system files
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+
+# Workshop source material
+*.pdf
+
+# Temporary files
+*.tmp
+*.swp
+*~
+# Local Pi runtime state
+.atl/
