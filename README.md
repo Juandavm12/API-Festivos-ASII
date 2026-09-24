@@ -7,6 +7,12 @@ La API tendrá dos responsabilidades principales:
 - validar si una fecha determinada es festiva;
 - obtener la lista de festivos correspondiente a un año.
 
+## Autores
+
+- Juan David Velasquez Murillo
+- Paula Andrea Calderon Quintero
+- Jose David Vasquez Diaz
+
 ## Diagramas
 
 | Diagrama | Descripción |
