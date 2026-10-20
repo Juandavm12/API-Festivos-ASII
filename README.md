@@ -10,7 +10,7 @@ API REST con **Express.js y MongoDB** para validar si una fecha es festiva, obte
 
 ## Ejecución local
 
-Requisitos: Node.js 22.9 o superior, npm y MongoDB en ejecución.
+Requisitos: Node.js 22.9 o superior, npm y MongoDB en ejecución. Para la prueba de integración también se necesita el ejecutable `mongod` disponible en `PATH`.
 
 Desde la raíz de este repositorio:
 
@@ -135,9 +135,10 @@ Estas validaciones son decisiones técnicas de la implementación. La API está 
 
 ```bash
 npm test
+npm run test:integration
 ```
 
-`npm test` verifica cálculo, fechas bisiestas, cruces anuales, contratos HTTP, CRUD, validaciones y errores con un repositorio en memoria, incluidos errores de URI y formatos no admitidos.
+`npm test` verifica cálculo, fechas bisiestas, cruces anuales, contratos HTTP, CRUD, validaciones y errores con un repositorio en memoria, incluidos errores de URI y formatos no admitidos. `npm run test:integration` inicia su propio `mongod` en un puerto y directorio temporales, prueba persistencia, carga repetida y creación concurrente, y lo elimina al terminar. No usa ni borra la base de desarrollo.
 
 ## Tecnologías
 
