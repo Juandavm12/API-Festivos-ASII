@@ -1,4 +1,4 @@
-# API de Festivos — Taller 1 y Taller 2
+# API de Festivos
 
 API REST con **Express.js y MongoDB** para validar si una fecha es festiva, obtener los festivos de un año y realizar el **CRUD de tipos de festivo**. Cada documento `Tipo` conserva sus festivos embebidos, de acuerdo con los diagramas del proyecto.
 
