@@ -2,10 +2,11 @@
 
 Modelado de la **API 1 del Taller 1 de Arquitectura de Software II**. La solución propuesta utiliza **Express.js** para la API REST y **MongoDB** para almacenar los tipos de cálculo con sus festivos embebidos.
 
-La API tendrá dos responsabilidades principales:
+La API tendrá tres responsabilidades principales:
 
 - validar si una fecha determinada es festiva;
-- obtener la lista de festivos correspondiente a un año.
+- obtener la lista de festivos correspondiente a un año;
+- crear, consultar, actualizar y eliminar tipos de festivo.
 
 ## Autores
 
@@ -41,3 +42,14 @@ El núcleo implementa las cuatro estrategias en UTC y calcula los festivos por a
 ```bash
 node --test test/festivo.servicio.test.js
 ```
+
+## API HTTP
+
+`crearApp(repositorio)` en `app.js` construye la aplicación Express con acceso a datos inyectable. Las pruebas usan un repositorio en memoria; la conexión persistente se incorpora en la siguiente unidad.
+
+```bash
+npm ci
+npm test
+```
+
+Consultas: `GET /api/festivos/verificar/:anio/:mes/:dia` y `GET /api/festivos/obtener/:anio`. CRUD: `GET/POST /api/tipos` y `GET/PUT/DELETE /api/tipos/:indice`. Los índices 1–4 definen las estrategias; PUT reemplaza los campos editables y el arreglo de festivos. Las validaciones rechazan cuerpos inválidos y conservan los errores HTTP de entrada sin atribuirlos a MongoDB.
