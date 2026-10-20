@@ -1,0 +1,49 @@
+[
+  {
+    "indice": 1,
+    "tipo": "Fijo",
+    "modoCalcularlo": "No se puede variar",
+    "festivos": [
+      { "dia": 1, "mes": 1, "nombre": "Año nuevo" },
+      { "dia": 1, "mes": 5, "nombre": "Día del Trabajo" },
+      { "dia": 20, "mes": 7, "nombre": "Independencia Colombia" },
+      { "dia": 7, "mes": 8, "nombre": "Batalla de Boyacá" },
+      { "dia": 8, "mes": 12, "nombre": "Inmaculada Concepción" },
+      { "dia": 25, "mes": 12, "nombre": "Navidad" }
+    ]
+  },
+  {
+    "indice": 2,
+    "tipo": "Ley de Puente festivo",
+    "modoCalcularlo": "Se traslada la fecha al siguiente lunes; si ya es lunes se conserva",
+    "festivos": [
+      { "dia": 6, "mes": 1, "nombre": "Santos Reyes" },
+      { "dia": 19, "mes": 3, "nombre": "San José" },
+      { "dia": 29, "mes": 6, "nombre": "San Pedro y San Pablo" },
+      { "dia": 15, "mes": 8, "nombre": "Asunción de la Virgen" },
+      { "dia": 12, "mes": 10, "nombre": "Día de la Raza" },
+      { "dia": 1, "mes": 11, "nombre": "Todos los santos" },
+      { "dia": 11, "mes": 11, "nombre": "Independencia de Cartagena" }
+    ]
+  },
+  {
+    "indice": 3,
+    "tipo": "Basado en el domingo de Pascua",
+    "modoCalcularlo": "Se suman los días correspondientes al domingo de Pascua",
+    "festivos": [
+      { "nombre": "Jueves Santo", "diasPascua": -3 },
+      { "nombre": "Viernes Santo", "diasPascua": -2 },
+      { "nombre": "Domingo de Pascua", "diasPascua": 0 }
+    ]
+  },
+  {
+    "indice": 4,
+    "tipo": "Pascua con Ley de Puente festivo",
+    "modoCalcularlo": "Se suman los días a Pascua y se traslada al lunes, conservándolo si ya es lunes",
+    "festivos": [
+      { "nombre": "Ascensión del Señor", "diasPascua": 40 },
+      { "nombre": "Corpus Christi", "diasPascua": 61 },
+      { "nombre": "Sagrado Corazón de Jesús", "diasPascua": 68 }
+    ]
+  }
+]

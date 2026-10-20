@@ -17,3 +17,11 @@ Thumbs.db
 *~
 # Local Pi runtime state
 .atl/
+
+# Node.js and local configuration
+node_modules/
+.env
+.env.*
+!.env.example
+coverage/
+*.log

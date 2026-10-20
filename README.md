@@ -1,4 +1,4 @@
-# API de Festivos — Taller 1
+# API de Festivos — Taller 1 y Taller 2
 
 Modelado de la **API 1 del Taller 1 de Arquitectura de Software II**. La solución propuesta utiliza **Express.js** para la API REST y **MongoDB** para almacenar los tipos de cálculo con sus festivos embebidos.
 
@@ -33,3 +33,11 @@ La API tendrá dos responsabilidades principales:
 - Express.js
 - MongoDB
 - Mermaid
+
+## Pruebas del núcleo de cálculo
+
+El núcleo implementa las cuatro estrategias en UTC y calcula los festivos por año destino, incluidos desplazamientos que cruzan el límite anual. El catálogo inicial está en `datos/tipos.json`.
+
+```bash
+node --test test/festivo.servicio.test.js
+```
